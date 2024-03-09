@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #abc{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 45px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+    p{
+        color: black;
+        font-size: 35px;
+        margin-left: 20px;
+        margin-top: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+    h1{
+        text-align: center !important;
+        font-size: 33px;
+        border-radius: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        border: 2px solid blanchedalmond;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: cadetblue;
+        color: aliceblue;
+    }  
+    #H2 {
+    text-align: center;
+    background: black;
+    color: aliceblue;
+    font-family: monospace;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    }  
+    #H2 span {
+    color: rgb(0, 120, 224);
+    font-family: monospace;
+    margin: 1%;
+    } 
+</style>
+<body>
+    <h2 id="abc">Assignment 9</h2>
+
+
+    <script>
+        // Get user preferences
+        var budget = prompt("Enter your budget preference (low, medium, high):");
+        var operatingSystem = prompt("Enter your preferred operating system (android, ios):");
+        var cameraQuality = prompt("Enter your preferred camera quality (basic, moderate, high):");
+        var batteryLife = prompt("Enter your preferred battery life (short, average, long):");
+        var screenSize = prompt("Enter your preferred screen size (small, medium, large):");
+        
+        
+        
+        if ( budget == "high" &&  operatingSystem == "ios" && cameraQuality == "moderate") {
+            document.write(`<h1>Suggestions for you </h1> <br>`)
+            document.write(`<p> iPhone 13 Pro Max</p> <br>`)
+            document.write(`<p> Price $1099</p> <br>`)
+            document.write(`<p> Operating System: ios</p> <br>`)
+            document.write(`<p> Camera: Triple 12MP</p> <br>`)
+            document.write(`<p> Battery Life: 28 hours talk time</p> <br>`)
+            document.write(`<p> Screen Size: 6.7 inches</p> <br>`)
+        } else if ( budget == "high" &&  operatingSystem == "ios" && cameraQuality == "high" ) {
+            document.write(`<h1>Suggestions for you </h1> <br>`)
+            document.write(`<p> iPhone 15 Pro Max</p> <br>`)
+            document.write(`<p> Price $1299</p> <br>`)
+            document.write(`<p> Operating System: ios</p> <br>`)
+    document.write(`<p> Camera: Triple 12MP</p> <br>`)
+    document.write(`<p> Battery Life: 28 hours talk time</p> <br>`)
+    document.write(`<p> Screen Size: 6.7 inches</p> <br>`)
+} else if ( budget == "high" &&  operatingSystem == "ios" && cameraQuality == "basic") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> iPhone 12 Pro</p> <br>`)
+    document.write(`<p> Price $999</p> <br>`)
+    document.write(`<p> Operating System: ios</p> <br>`)
+    document.write(`<p> Camera: Triple 12MP</p> <br>`)
+    document.write(`<p> Battery Life: 28 hours talk time</p> <br>`)
+    document.write(`<p> Screen Size: 6.7 inches</p> <br>`)
+} else if ( budget == "medium" && operatingSystem  == "ios" && cameraQuality == "high") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> iPhone x</p> <br>`)
+    document.write(`<p> Price $500</p> <br>`)
+    document.write(`<p> Operating System: ios</p> <br>`)
+    document.write(`<p> Camera: 12MP</p> <br>`)
+    document.write(`<p> Battery Life: 2716mAh</p> <br>`)
+    document.write(`<p> Screen Size: 5.8 inches</p> <br>`)
+} else if ( budget == "medium" && operatingSystem  == "ios" && cameraQuality == "moderate") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> iPhone 7 Plus</p> <br>`)
+    document.write(`<p> Price $150</p> <br>`)
+    document.write(`<p> Operating System: ios</p> <br>`)
+    document.write(`<p> Camera: 10MP</p> <br>`)
+    document.write(`<p> Battery Life: 1960mAh</p> <br>`)
+    document.write(`<p> Screen Size: 5.8 inches</p> <br>`)
+} else if ( budget == "medium" && operatingSystem  == "ios" && cameraQuality == "basic") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> iPhone 7</p> <br>`)
+    document.write(`<p> Price $150</p> <br>`)
+    document.write(`<p> Operating System: ios</p> <br>`)
+    document.write(`<p> Camera: 8MP</p> <br>`)
+    document.write(`<p> Battery Life: 1960mAh</p> <br>`)
+    document.write(`<p> Screen Size: 5.8 inches</p> <br>`)
+} else if ( budget == "medium" && operatingSystem  == "ios") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> iPhone 6s</p> <br>`)
+    document.write(`<p> Price $130</p> <br>`)
+    document.write(`<p> Operating System: ios</p> <br>`)
+    document.write(`<p> Camera: 10MP</p> <br>`)
+    document.write(`<p> Battery Life: 1960mAh</p> <br>`)
+    document.write(`<p> Screen Size: 5.3 inches</p> <br>`)
+} else if (budget == "low" && operatingSystem == "ios") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> iPhone 5s</p> <br>`)
+    document.write(`<p> Price $40</p> <br>`)
+    document.write(`<p> Operating System: ios</p> <br>`)
+    document.write(`<p> Camera: 5MP</p> <br>`)
+    document.write(`<p> Battery Life: 2716mAh</p> <br>`)
+    document.write(`<p> Screen Size: 5.8 inches</p> <br>`)
+} else if (budget == "low" && operatingSystem == "android") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> Oppo A1k</p> <br>`)
+    document.write(`<p> Price 15,000PKR</p> <br>`)
+    document.write(`<p> Operating System: Android</p> <br>`)
+    document.write(`<p> Camera: 8M Dual Camera</p> <br>`)
+    document.write(`<p> Battery Life: 4000mAh</p> <br>`)
+    document.write(`<p> Screen Size: 6.1 inches</p> <br>`)
+    
+} else if (budget == "medium" && operatingSystem == "android" && cameraQuality == "moderate") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> Tecno Spark 5 Air</p> <br>`)
+    document.write(`<p> Price 20,000PKR</p> <br>`)
+    document.write(`<p> Operating System: Android</p> <br>`)
+    document.write(`<p> Camera: 13M Dual Camera</p> <br>`)
+    document.write(`<p> Battery Life: 5000mAh</p> <br>`)
+    document.write(`<p> Screen Size: 720x1640</p> <br>`)
+} else if (budget == "medium" && operatingSystem == "android" && cameraQuality == "high") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> Tecno Spark 6 Go</p> <br>`)
+    document.write(`<p> Price 21,000PKR</p> <br>`)
+    document.write(`<p> Operating System: Android</p> <br>`)
+    document.write(`<p> Camera: 13M Dual Camera</p> <br>`)
+    document.write(`<p> Battery Life: 5000mAh</p> <br>`)
+    document.write(`<p> Screen Size: 720x1600</p> <br>`)
+} else if (budget == "medium" && operatingSystem == "android") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> Tecno Spark 6 Go</p> <br>`)
+    document.write(`<p> Price 21,000PKR</p> <br>`)
+    document.write(`<p> Operating System: Android</p> <br>`)
+    document.write(`<p> Camera: 13M Dual Camera</p> <br>`)
+    document.write(`<p> Battery Life: 5000mAh</p> <br>`)
+    document.write(`<p> Screen Size: 720x1600</p> <br>`)
+} else if (budget == "high" && operatingSystem == "android" && cameraQuality == "high") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> Samsung Galaxy S23 Ultra</p> <br>`)
+    document.write(`<p> Price 359,999PKR</p> <br>`)
+    document.write(`<p> Operating System: Android</p> <br>`)
+    document.write(`<p> Camera: 200MP</p> <br>`)
+    document.write(`<p> Battery Life: 5000mAh</p> <br>`)
+    document.write(`<p> Screen Size: 6.8 inches</p> <br>`)
+    
+} else if (budget == "high" && operatingSystem == "android" && cameraQuality == "moderate") {
+    document.write(`<h1>Suggestions for you </h1> <br>`)
+    document.write(`<p> Samsung Galaxy S22</p> <br>`)
+    document.write(`<p> Price 194999/PKR</p> <br>`)
+    document.write(`<p> Operating System: Android</p> <br>`)
+    document.write(`<p> Camera: 200MP</p> <br>`)
+    document.write(`<p> Battery Life: 5000mAh</p> <br>`)
+    document.write(`<p> Screen Size: 6.8 inches</p> <br>`)
+} else {
+    alert('Invalid please Try again ❗')
+}
+
+
+
+</script>
+<br>
+<br>
+<h2 id="H2">CopyRight © 2024<span style="color: blue;">By</span>Abdul Rehhman</h2>
+</body>
+</html>
